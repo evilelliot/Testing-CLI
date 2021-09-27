@@ -39,6 +39,12 @@ int main(int argc, char* argv[]){
             }else if(argc == 3){
                 t.greetings(argList[1]);
             }
+        }else if(argList[0] == "-m" || argList[0] == "-M" || argList[0] == "module" ){
+            if(argc < 3){
+                cout << "Module operation needs a vector!" << endl;
+            }else{
+                cout << "Vector: " << argList[1] << endl;
+            }
         }
     }
     return 0;
